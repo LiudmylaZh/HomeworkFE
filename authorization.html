@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login form</title>
-    
+
     <style>
       html,
       body,
@@ -16,28 +16,25 @@
       }
 
       body {
-        margin:0;
-       
+        margin: 0;
       }
       .wrapper {
         display: flex;
         margin: 0;
-        
       }
-      
+
       .form-conteiner {
         background: rgb(242, 234, 255);
         padding: 40px 20px;
         border-radius: 16px;
         text-align: center;
-      } 
+      }
 
       .form {
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
-         
       }
 
       .row {
@@ -46,19 +43,16 @@
       .banner {
         flex: 1;
         flex-direction: column;
-        
       }
       .input {
         border: none;
         font-size: 16px;
         padding: 15px;
         border-radius: 8px;
-
       }
 
       .input:focus {
         outline: none;
-        
       }
 
       .button {
@@ -68,20 +62,13 @@
         border: none;
         padding: 10px 20px;
         border-radius: 8px;
+      }
 
-      }
-      .picture {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
-      .figure {
+      .figure1 {
         margin: 0;
         width: 100%;
         height: 100%;
         line-height: 0;
-        
-
       }
       .picture {
         object-fit: cover;
@@ -94,16 +81,11 @@
     </style>
   </head>
 
-
   <body>
     <div class="wrapper">
-
       <div class="form">
         <div class="form-conteiner">
-
-        
-          <div class="row">Logo
-          </div>
+          <div class="row">Logo</div>
 
           <div class="row">
             <h1>Welcome!</h1>
@@ -114,20 +96,17 @@
           </div>
 
           <div class="row">
-            <input type="password" class="input" placeholder="Password">
+            <input type="password" class="input" placeholder="Password" />
           </div>
 
           <div class="row">
-            <button class="button">
-              Login
-            </button>
+            <button class="button">Login</button>
           </div>
         </div>
-        </div>
-      
+      </div>
 
       <div class="banner">
-        <figure>
+        <figure class="figure1">
           <img
             class="picture"
             src="https://images.unsplash.com/photo-1571867424488-4565932edb41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80"
