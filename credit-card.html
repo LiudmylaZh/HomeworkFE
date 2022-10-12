@@ -13,6 +13,7 @@
   <style>
     .credit-card {
       display: flex;
+      
       width: 100%;
       z-index: 1;
     }
@@ -20,11 +21,12 @@
     .credit2,
     .credit3 {
       flex-direction: column;
-      border: 5px solid black;
       height: 200px;
       width: 350px;
       border-radius: 16px;
-      margin: 30px;
+      box-sizing: border-box;
+      margin: 1%;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     }
 
     .credit1 {
@@ -37,89 +39,184 @@
       border: solid rgb(233, 231, 243);
       box-sizing: border-box;
     }
-    .topline {
+    .item {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
-      width: 320px;
-      padding-left: 10px;
+      width: 95%;
       padding-top: 10px;
       font-weight: bolder;
+      margin-left: 5px;
+      margin-right: 5px;
     }
     .linkcard {
       color: rgb(157, 153, 169);
     }
     .incomme {
       margin-top: 75px;
-      display: flex;
-      flex-direction: row;
       padding-left: 10px;
+      display: flex;
+      justify-content: space-between;
     }
     .summ {
+      display: flex;
+      flex-direction: column;
       font-size: 35px;
       font-weight: bold;
     }
 
     .currency,
     #arrowdown {
+      
       font-size: 18px;
       font-weight: bold;
       padding-top: 10px;
-      padding-left: 5px;
+      margin-left: 0px;
+      margin-right: 0px;
     }
     .currency {
       margin-left: 40px;
     }
 
     #arrowdown {
-      float: right;
-      flex-direction: column;
+      padding-right: 5px;
     }
 
     .credit2 {
-        display: flex;
-        background: rgb(255,225,236);
-        background: linear-gradient(150deg, rgba(254,238,200,1) 20%, rgba(255,225,236,0.78) 100%);
+      display: flex;
+      background: rgb(255, 225, 236);
+      background: linear-gradient(
+        150deg,
+        rgba(254, 238, 200, 1) 20%,
+        rgba(255, 225, 236, 0.78) 100%
+      );
     }
-    .item {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+
     .question-round {
-        
-        border: 3px solid rgb(166, 168, 171);
-        background: rgb(166, 168, 171);
-        border-radius: 50%;
-        padding: ;
-        color: rgb(255, 235, 215);
-        height: 20px;
-        width: 20px;
-        text-align: center;
-        margin-top: 10px;
-        margin-right: 10px;
+      border: 3px solid rgb(166, 168, 171);
+      background: rgb(166, 168, 171);
+      border-radius: 50%;
+      color: rgb(255, 235, 215);
+      height: 20px;
+      width: 20px;
+      text-align: center;
+      margin-top: 10px;
+      margin-right: 10px;
     }
     .percentcad {
-        display: flex;
-        padding-left: 10px;
-        padding-right: 10px;
-        box-sizing: border-box;
+      display: flex;
+      padding-left: 15px;
+      margin-top: 45px;
+      height: 60px;
+      justify-content: left;
+      align-items: center;
+    }
+    .cub {
+      border: 5px solid rgb(255, 213, 205);
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      background: rgb(255, 213, 205);
+      border-radius: 50%;
     }
 
     #cub-round {
-        color: red;
-        background: grb(255, 213, 205);
+      color: red;
+      font-size: 50px;
     }
+    .percent {
+      margin: 0;
+      color: red;
+      font-size: 25px;
+      font-weight: bolder;
+      padding-left: 10px;
+    }
+
+    .spendding {
+      margin: 0;
+      font-weight: bolder;
+      padding-left: 10px;
+    }
+    .credit3 {
+      background: rgb(235,253,236);
+      background: radial-gradient(circle, rgba(235,253,236,1) 0%, rgba(218,253,191,1) 100%);
+      padding: 15px;
+    }
+
+    .visa {
+      display: flex;
+      width: 95%;
+      
+      
+    }
+    .dot1,
+    .dot2 {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      display: inline-block;
+          }
+    .dot1 {
+      background: black;
+      position: relative;
+      z-index: 1;
+    }
+
+    .dot2 {
+      background: rgb(142, 160, 120);
+      position: absolute;
+      margin-left: 20px;
+    }
+    
+    .card-info,
+    .holder,
+    .valid
+     {
+      color: rgb(157, 153, 169);
+      font-weight: 100px;
+      margin-top: 20px;
+      padding-right: 5px;
+      font-size: 10px;
+    }
+   .number {
+    font-size:x-large;
+    font-weight: bold;
+   }
+    
+  .name-position,
+  .personal-dates {
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+      font-weight: bolder;
+      
+
+  }
+  .holder,
+  .valid,
+  .name,
+  .valid-dates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%
+  }
+
+  .name,
+  .valid-dates,
+  .number {
+    padding-top: 5px;
+  }
+
 
   </style>
   <body>
     <div class="credit-card">
       <div class="credit1">
-        <div class="topline">
+        <div class="item">
           <p>Your Working Balance</p>
           <p>
             <a href="https://www.google.de/" class="linkcard">
-                Saving Account
+              Saving Account
             </a>
           </p>
         </div>
@@ -134,21 +231,46 @@
       </div>
 
       <div class="credit2">
-        <div class="topline">
+        <div class="item">
           <p>Your Saving Status</p>
           <div class="question-round">?</div>
         </div>
 
         <div class="percentcad">
-          <span class="material-symbols-outlined" id="cub-round">
-            view_in_ar
-          </span>
-          <div class="percent">4.28%</div>
-          <div class="spendding">Your spending increase</div>
+          <div class="cub">
+            <span class="material-symbols-outlined" id="cub-round">
+              view_in_ar
+            </span>
+          </div>
+          <div>
+            <p class="percent">4.28%</p>
+            <p class="spendding">Your spending increase</p>
+          </div>
         </div>
       </div>
 
-      <div class="credit3">three</div>
+      <div class="credit3">
+        <div class="visa">
+          <span class="dot1"></span>
+          <span class="dot2"></span>
+        </div>
+          <div class="card-details">
+            <div class="card-info">CARD NUMBER</div>
+            <div class="number">3829 4820 4629 5025</div>
+          </div>
+
+        
+          <div class="name-position"> 
+            <div class="holder"> CARD HOLDER NAME </div>
+            <div class="valid"> VALID THRU</div>
+            </div>
+        <div class="personal-dates">
+            <div class="name"> Anita Rose </div>
+            <div class="valid-dates">09/07</div>
+            </div>
+        
+        
+      </div>
     </div>
   </body>
 </html>
