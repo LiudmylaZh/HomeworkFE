@@ -22,7 +22,11 @@
     :root {
       --siderbar-width: 250px;
     }
-
+    html,
+    body,
+    .finti {
+      width: 100%;
+    }
     body {
       font-family: "Montserrat", sans-serif;
     }
@@ -31,12 +35,18 @@
       padding: 0;
       box-sizing: border-box;
     }
+    .finti {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
 
     .sidebar {
+
       background: rgb(246, 247, 255);
-      width: 350px;
-      height: 2000px;
-      position: absolute;
+      width: 250px;
+      height: 100vh;
+      position: fixed;
       top: 0;
       left: 0;
       box-sizing: border-box;
@@ -46,56 +56,55 @@
       padding-left: 15px;
     }
 
-    img {
-      align-items: center;
-      padding-top: 30px;
-    }
-
-    h3 {
-      padding: 50px 20px 25px 0px;
+    h5 {
+      padding: 30px 20px 25px 0px;
       color: rgb(125, 124, 141);
-    }
-    #dropdown {
-      overflow: hidden;
     }
 
     #sidebar-icons {
       color: rgb(81, 69, 157);
-      font-size: 35px;
-      vertical-align: middle;
-      padding-bottom: 10px;
+      padding-bottom: 20px;
+      padding-right: 5px;
+      font-size: 16px;
     }
 
     .linesidebar {
-      font-size: 18px;
+      font-size: 16px;
       color: rgb(203, 204, 213);
       text-decoration: none;
-      padding-bottom: 10px;
     }
 
     #rightarrow {
+      vertical-align: middle;
       float: right;
-      padding-bottom: 10px;
+      font-size: 16px;
+      padding-right: 10px;
     }
     .figure {
-      height: 900px;
-      width: 300px;
+      height: 250px;
+      width: 90%;
+      position: relative;
+      display: flex;
+      justify-content: center;
     }
     .question {
-      right: 120px;
-      width: 100px;
-      height: 100px;
+      width: 65px;
+      height: 65px;
       background: rgb(248, 137, 105);
-      border: 25px solid white;
+      border: 20px solid white;
       box-sizing: border-box;
       border-radius: 50%;
-      line-height: 35px;
+      text-align: center;
       font-weight: bold;
-      font-size: 40px;
+      font-size: 20px;
       color: white;
       position: absolute;
       z-index: 1;
       text-align: center;
+      margin-top: 25px;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
 
     .banner {
@@ -107,23 +116,23 @@
       border-radius: 20px;
       border-color: rgb(233, 231, 243);
       margin-top: 55px;
-      width: 300px;
-      height: 360px;
+      width: 100%;
+      height: 95%;
       position: absolute;
-      margin-right: 15px;
       text-align: center;
+      padding: 5px;
     }
 
     .textbanner {
-      padding-bottom: 30px;
       color: rgb(125, 124, 141);
-      font-size: large;
-      font-weight: 600;
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 15px;
     }
     .helpcenter {
       text-align: center;
-      padding-top: 120px;
-      font-size: 30px;
+      padding-top: 50px;
+      font-size: 20px;
       font-weight: bolder;
       color: rgb(90, 83, 70);
     }
@@ -131,32 +140,31 @@
     .button {
       background: white;
       border-radius: 10px;
-      font-size: 18px;
+      font-size: 12px;
       font-weight: bold;
-      padding-top: 10px;
-      padding-right: 25px;
-      padding-bottom: 20px;
-      padding-left: 25px;
-      border-color: white;
+      line-height: 40px;
+      width: 90%;
+      border: none;
+      margin-top: 20px;
     }
 
     .center {
-      margin-left: 350px;
-      padding-inline-start: 30px, 30px, 0, 0;
-      width: 100%;
+      margin-left: 250px;
     }
 
     .searchline {
-      padding: 30px;
+      padding-top: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
       box-sizing: border-box;
       background: rgb(246, 247, 255);
-      width: 100%;
       display: flex;
-      height: 290px;
+      height: 150px;
       justify-content: space-between;
       border-bottom: solid;
       border-color: rgb(233, 231, 243);
       text-align: center;
+      position: fixed;
     }
     .search {
       position: flex;
@@ -164,7 +172,7 @@
       background: white;
       padding-left: 15px;
       margin-right: 100px;
-      height: 60px;
+      height: 40px;
     }
     #loop {
       font-size: 20px;
@@ -174,7 +182,7 @@
     .input {
       border: none;
       font-size: 16px;
-      padding: 15px;
+      padding: 16px;
       background: none;
       position: flex;
       flex-direction: row;
@@ -187,18 +195,18 @@
       color: rgb(71, 71, 75);
       width: 100px;
       display: flex;
-      font-size: 35px;
-      text-align: center;
+      height: 40px;
+      padding-top: 10px;
+      padding-left: 50px;
     }
 
     .extra-menu {
       word-spacing: 15px;
-      align-items: center;
-      text-align: center;
-      padding-top: 10px;
       color: rgb(165, 166, 179);
-      width: 150px;
-      
+      width: 300px;
+      height: 40px;
+      padding-top: 16px;
+      padding-left: 100px;
     }
 
     #avatar1 {
@@ -210,31 +218,363 @@
       font-weight: bolder;
       display: flex;
       color: rgb(49, 48, 50);
-      width: 180px;
-      height: 50px;
+      width: 100px;
+      height: 55px;
       margin-right: 150px;
       align-items: center;
+      padding-left: 160px;
     }
 
     .credit-card {
       display: flex;
+      justify-content: space-between;
+      z-index: 1;
+      margin-top: 90px;
+      padding-left: 45px;
+      position: fixed;
     }
 
     .credit1,
     .credit2,
     .credit3 {
-      position: flex;
-      flex-direction: row;
-      border: 5xp solidb black
-      
+      flex-direction: column;
+      height: 150px;
+      width: 300px;
+      margin-right: 50px;
+      border-radius: 16px;
+      box-sizing: border-box;
+      justify-content: center;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     }
 
+    .credit1 {
+      display: flex;
+      background: linear-gradient(
+        110deg,
+        rgba(251, 240, 223, 1) 50%,
+        rgba(224, 224, 249, 0.779171043417367) 100%
+      );
+      border: solid rgb(233, 231, 243);
+      box-sizing: border-box;
+    }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      width: 95%;
+      margin-top: 10px;
+      font-weight: bolder;
+      font-size: 10px;
+      padding-left: 10px;
+    }
+    .linkcard {
+      color: rgb(157, 153, 169);
+    }
+    .incomme {
+      margin-top: 75px;
+      padding-left: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .summ {
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+      font-weight: bolder;
+      height: 80%;
+    }
+
+    .currency,
+    #arrowdown {
+      font-size: 12px;
+      font-weight: bold;
+      margin: 3px;
+    }
+    .currency {
+      margin-left: 50px;
+    }
+
+    #arrowdown {
+      padding-right: 5px;
+      vertical-align: middle;
+      height: 30px;
+    }
+
+    .credit2 {
+      display: flex;
+      background: rgb(255, 225, 236);
+      background: linear-gradient(
+        150deg,
+        rgba(254, 238, 200, 1) 20%,
+        rgba(255, 225, 236, 0.78) 100%
+      );
+    }
+
+    .question-round {
+      border: 3px solid rgb(166, 168, 171);
+      background: rgb(166, 168, 171);
+      border-radius: 50%;
+      color: rgb(255, 235, 215);
+      height: 20px;
+      width: 20px;
+      text-align: center;
+    }
+    .percentcad {
+      display: flex;
+      padding-left: 15px;
+      margin-top: 45px;
+      height: 60px;
+      justify-content: left;
+      align-items: center;
+    }
+    .cub {
+      border: 5px solid rgb(255, 213, 205);
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      background: rgb(255, 213, 205);
+      height: 45px;
+      border-radius: 50%;
+    }
+
+    #cub-round {
+      color: red;
+      font-size: 35px;
+    }
+    .percent {
+      margin: 0;
+      color: red;
+      font-size: 16px;
+      font-weight: bolder;
+      padding-left: 10px;
+    }
+
+    .spendding {
+      margin: 0;
+      font-size: 10px;
+      font-weight: bolder;
+      padding-left: 10px;
+    }
+    .credit3 {
+      background: rgb(235, 253, 236);
+      background: radial-gradient(
+        circle,
+        rgba(235, 253, 236, 1) 0%,
+        rgba(218, 253, 191, 1) 100%
+      );
+      padding: 15px;
+    }
+
+    .visa {
+      display: flex;
+      width: 95%;
+    }
+    .dot1,
+    .dot2 {
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .dot1 {
+      background: black;
+      position: relative;
+      z-index: 1;
+    }
+
+    .dot2 {
+      background: rgb(142, 160, 120);
+      position: absolute;
+      margin-left: 20px;
+    }
+
+    .card-info,
+    .holder,
+    .valid {
+      color: rgb(157, 153, 169);
+      font-weight: bold;
+      margin-top: 15px;
+      padding-right: 5px;
+      font-size: 8px;
+    }
+    .number,
+    .name,
+    .valid-dates {
+      font: size 16px;
+      font-weight: bold;
+      padding-top: 5px;
+    }
+
+    .name-position,
+    .personal-dates {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-weight: bolder;
+    }
+    .holder,
+    .valid,
+    .name,
+    .valid-dates {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 45%;
+    }
+    
+    .graph-wrapper {
+        margin-top: 280px;
+
+        
+      }
+   .graph-line,
+    .graph{
+      
+        margin: 20px;
+       
+    }
+
+    .graph-line {
+        display: flex;
+        justify-content: space-between;
+        border-top:  solid rgb(233, 231, 243);
+        border-bottom: solid rgb(233, 231, 243);;
+    }
+    
+    .graph
+    {
+        display: flex;
+        height: 90px;
+        width: 320px;
+        margin: 5px;
+        padding: 0;
+    }
+   
+    .graph-details,
+    #leaserboard1{
+        flex-direction: column;
+        
+    }
+    .graph-details {
+        padding: 10px;
+        position: flex;
+        flex:1
+    }
+    .task {
+        color: rgb(152, 152, 152);
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    .wrapper-plus {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .num2 {
+       
+        color: rgb(238, 142, 116);
+        font-weight: bolder;
+
+
+    }
+    .plus {
+        display: flex;
+        background: rgb(221, 247, 235);
+        width: 40px;
+        padding-left: 5px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: bolder;
+        color: rgb(91, 129, 114);
+        border: 5px solid rgb(221, 247, 235);
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-left: 25px;
+        
+    }
+    #arrow-side {
+        font-size: 10px;    
+    }
+
+    .month {
+        color: rgb(152, 152, 152);
+        font-size: 15px;
+    }
+    #leaserboard1 {
+        font-size: 100px;
+        width: 130px;
+        text-align: center;
+        color: rgb(152, 152, 152);
+    }
+    .num3 {
+        color: rgb(86, 76, 143);
+        font-weight: bolder;
+    }
+
+    .plus2 {
+        display: flex;
+        background: rgb(222, 218, 238);
+        width: 40px;
+        padding-left: 5px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: bolder;
+        color: rgb(119, 110, 166);
+        border: 5px solid rgb(222, 218, 238);
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-left: 25px;
+
+    }
+    .num4 {
+        color: rgb(80, 213, 189);
+        font-weight: bolder;
+    }
+    .plus3 {
+        display: flex;
+        background: rgb(215, 251, 244);
+        width: 40px;
+        padding-left: 5px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: bolder;
+        color: rgb(80, 213, 189);
+        border: 5px solid rgb(215, 251, 244);
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-left: 25px;
+    }
+    .main {
+      padding: 10px;
+      margin-bottom: 450px;
+      display: flex;
+      justify-content: space-between;
+      min-height: 600px;
+    }
+
+    .wrapper-latest,
+    .wrapper-uncomming {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid red;
+      width: 50%;
+      justify-content: space-between;
+      padding: 10px;
+      border-radius: 16px;
+    }
+    
+    .wrapper-latest {
+      margin-right: 10px;
+      background: rgb(251, 251, 255);
+    }
 
   </style>
   <body>
+    <div class="finti">
     <asaid class="sidebar">
-      <img src="Logo.png" alt="" />
-      <h3>Main navigation</h3>
+      <h5>Main navigation</h5>
 
       <p>
         <a href="#" class="linesidebar"
@@ -289,7 +629,7 @@
         >
       </p>
 
-      <h3>Settings & Schedules</h3>
+      <h5>Settings & Schedules</h5>
       <p>
         <a href="#" class="linesidebar"
           ><span class="material-symbols-outlined" id="sidebar-icons">
@@ -321,8 +661,6 @@
         >
       </p>
 
-      <p></p>
-
       <p>
         <a href="#" class="linesidebar"
           ><span class="material-symbols-outlined" id="sidebar-icons">
@@ -335,7 +673,7 @@
         >
       </p>
 
-      <figure>
+      <div class="figure">
         <div class="question">
           <p>?</p>
         </div>
@@ -345,12 +683,11 @@
             <p>
               Having trouble in Finti. Please contact us for more questions.
             </p>
-            <p></p>
           </div>
 
           <button class="button">Go To Help Center</button>
         </div>
-      </figure>
+      </div>
     </asaid>
 
     <div class="center">
@@ -372,21 +709,153 @@
 
         <div class="avatar">
           <p style="padding: 10px">Hi,Shakir</p>
-          <img src="https://via.placeholder.com/70x70" id="avatar1" />
+          <p><img src="https://via.placeholder.com/50x50" id="avatar1" /></p>
         </div>
       </div>
 
-      
       <div class="credit-card">
-        <div class="credit1">1</div>
-        <div class="credit2">2</div>
-        <div class="credit3">3</div>
+        <div class="credit1">
+          <div class="item">
+            <p>Your Working Balance</p>
+            <p>
+              <a href="https://www.google.de/" class="linkcard">
+                Saving Account
+              </a>
+            </p>
+          </div>
+
+          <div class="incomme">
+            <div class="summ">PKR 9,250,000</div>
+            <div class="currency">PKR</div>
+            <span class="material-symbols-outlined" id="arrowdown">
+              keyboard_arrow_down
+            </span>
+          </div>
+        </div>
+
+        <div class="credit2">
+          <div class="item">
+            <p>Your Saving Status</p>
+            <div class="question-round">?</div>
+          </div>
+
+          <div class="percentcad">
+            <div class="cub">
+              <span class="material-symbols-outlined" id="cub-round">
+                view_in_ar
+              </span>
+            </div>
+            <div>
+              <p class="percent">4.28%</p>
+              <p class="spendding">Your spending increase</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="credit3">
+          <div class="visa">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+          </div>
+          <div class="card-details">
+            <div class="card-info">CARD NUMBER</div>
+            <div class="number">3829 4820 4629 5025</div>
+          </div>
+
+          <div class="name-position">
+            <div class="holder">CARD HOLDER NAME</div>
+            <div class="valid">VALID THRU</div>
+          </div>
+          <div class="personal-dates">
+            <div class="name">Anita Rose</div>
+            <div class="valid-dates">09/07</div>
+          </div>
+        </div>
       </div>
 
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
+      <div class="graph-wrapper">
+        <div class="graph-line">
 
+            <div class="graph">
+                <div class="graph-details">
+                    <div class="task"> Task in Progress</div>
+                    
+                    <div class="wrapper-plus">
+                    <div class="num2">210</div>
+                    
+                        <div class="plus">
+                            <div>23</div> 
+                        <span class="material-symbols-outlined" id="arrow-side"> 
+                            trending_up
+                            </span>
+                            </div>
+                        </div>
+                        <div class="month">Current Month</div>
+                        </div>
+                        <span class="material-symbols-outlined" id="leaserboard1">
+                            monitoring
+                            </span>
+                </div>
+
+            <div class="graph">
+                  <div class="graph-details">
+                      <div class="task"> Task Completed
+                      </div>
+                      
+                      <div class="wrapper-plus">
+                      <div class="num3">185</div>
+                      
+                          <div class="plus2">
+                              <div>45</div> 
+                          <span class="material-symbols-outlined" id="arrow-side"> 
+                              trending_up
+                              </span>
+                              </div>
+                          </div>
+                          <div class="month">Current Month</div>
+                          </div>
+                          <span class="material-symbols-outlined" id="leaserboard1">
+                              monitoring
+                              </span>
+              </div>
+                
+
+                <div class="graph">
+                  <div class="graph-details">
+                      <div class="task"> Mothly Task Summary</div>
+                      
+                      <div class="wrapper-plus">
+                      <div class="num4">1.240</div>
+                      
+                          <div class="plus3">
+                              <div>23</div> 
+                          <span class="material-symbols-outlined" id="arrow-side"> 
+                              trending_up
+                              </span>
+                              </div>
+                          </div>
+                          <div class="month">Current Month</div>
+                          </div>
+                          <span class="material-symbols-outlined" id="leaserboard1">
+                              monitoring
+                              </span>
+              </div>
+                </div>
+                </div>
+      
+      <div class="main">
+        <div class="wrapper-latest">
+          <div class="transaction">Latest Transactions</div>
+          <div class="ammount"> search/filter</div>
+        </div>
+        <div class="wrapper-uncomming">
+        <div class="upcomming"> Upcomming Transactions</div>
+        <div class="view"> View All </div>
+        </div>
+
+      </div>
+      
+    </div>
     </div>
   </body>
 </html>
