@@ -60,6 +60,7 @@
       padding: 30px 20px 25px 0px;
       color: rgb(125, 124, 141);
     }
+    
 
     #sidebar-icons {
       color: rgb(81, 69, 157);
@@ -148,23 +149,26 @@
       margin-top: 20px;
     }
 
-    .center {
+    main {
       margin-left: 250px;
       width: calc(100% - 250px);
+     
+      
+      
     }
 
     .searchline {
+      
       padding-top: 20px;
       padding-left: 30px;
-      padding-right: 30px;
       box-sizing: border-box;
       background: rgb(246, 247, 255);
-      display: flex;
       height: 150px;
-      justify-content: space-between;
       border-bottom: solid;
       border-color: rgb(233, 231, 243);
       text-align: center;
+      display: flex;
+      justify-content: space-between;
       
     }
     .search {
@@ -230,7 +234,13 @@
       display: flex;
       justify-content: space-between;
       z-index: 1;
-      padding-left: 45px;
+      margin-left: 50px;
+      padding-right: 50px;
+      position: absolute;
+      top: 85px;
+      width: calc(100% - 250px);
+      
+
       
     }
 
@@ -250,11 +260,8 @@
 
     .credit1 {
       display: flex;
-      background: linear-gradient(
-        110deg,
-        rgba(251, 240, 223, 1) 50%,
-        rgba(224, 224, 249, 0.779171043417367) 100%
-      );
+      background: rgb(254,237,210);
+      background: linear-gradient(140deg, rgba(254,237,210,1) 35%, rgba(212,214,252,1) 100%);
       border: solid rgb(233, 231, 243);
       box-sizing: border-box;
     }
@@ -303,12 +310,8 @@
 
     .credit2 {
       display: flex;
-      background: rgb(255, 225, 236);
-      background: linear-gradient(
-        150deg,
-        rgba(254, 238, 200, 1) 20%,
-        rgba(255, 225, 236, 0.78) 100%
-      );
+      background: rgb(255,238,199);
+      background: linear-gradient(135deg, rgba(255,238,199,1) 35%, rgba(254,225,236,1) 100%);
     }
 
     .question-round {
@@ -424,11 +427,12 @@
     }
     
   
-   .graph-line,
-    .graph{
+   .graph-line
+    {
+      margin: 120px 0px 20px 20px;
       
-        margin: 20px;
-       
+      
+      
     }
 
     .graph-line {
@@ -542,32 +546,139 @@
         box-sizing: border-box;
         margin-left: 25px;
     }
-    .main {
-      padding: 10px;
-      margin-bottom: 450px;
+
+   
+
+    .main-inform {
       display: flex;
       justify-content: space-between;
-      min-height: 600px;
+     
     }
-    .wrapper-latest,
-    .wrapper-uncomming {
-      display: flex;
-      flex-direction: column;
-      border: 2px solid red;
-      width: 50%;
-      justify-content: space-between;
+
+    .latest-transaction,
+    .latest-upcomming {
+     
+      margin: 20px;
+      box-sizing: border-box;
       padding: 10px;
       border-radius: 16px;
+      
+    }
+
+    .latest-transaction {
+     width: 60%;
+      background: rgb(251, 250, 254);
+    }
+    .latest-upcomming {
+      width:40%
+     
+      
     }
     
-    .wrapper-latest {
-      margin-right: 10px;
-      background: rgb(251, 251, 255);
+    .wrapper-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 5px;
+      
     }
+
+    .transaction {
+      font-weight: bolder;
+      color: rgb(73, 87, 99);
+      font-size: 16px;
+    }
+
+    .icon-transaction {
+      color: rgb(182, 181, 185);
+      
+    }
+
+   .wrapper-colum {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+   
+
+    #colum-1 {
+        color: rgb(52, 72, 86);
+        background: rgb(228, 237, 245);
+      border-radius: 8px;
+      font-size: 25px;
+      align-items: center;
+      border: 10px solid rgb(228, 237, 245);
+    
+    }
+
+    .colum-2 {
+      
+      width: 50%;
+      font-weight: bolder;
+     
+    }
+
+    .colum-3 {
+      width: 25%;
+      text-align: end;
+      color: red;
+      font-weight: bolder;
+    }
+
+    .grey-num {
+      color: rgb(52, 72, 86);
+      font-weight: bolder;
+    }
+    .view {
+      color:rgb(125, 124, 141);
+      font-weight: bolder;
+      font-size: 10px;
+      padding-top: 5px;
+    }
+
+    h6 {
+      color:rgb(125, 124, 141);
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+
+   
+    #icon-water,
+    #icon-incom,
+    #icon-electric, 
+    #icon-transfer
+     {
+      
+      color: white;
+      border-radius: 8px;
+      font-size: 40px;
+      align-items: center;
+
+      
+    }
+    #icon-water { 
+        background: rgb(53, 39, 178);
+    }
+
+    #icon-incom {
+    background:  rgb(251, 67, 105);
+      
+    }
+
+    #icon-electric {
+      background:  rgb(10, 145, 254);
+     
+    }
+    #icon-transfer {
+        background:  rgb(225, 175, 44);
+    }
+
 
   </style>
   <body>
-    <div class="finti">
+    
     <aside class="sidebar">
       <h5>Main navigation</h5>
 
@@ -685,7 +796,7 @@
       </div>
     </aside>
 
-    <div class="center">
+    <main>
       <div class="searchline">
         <div class="search">
           <span class="icon" id="loop"> <i class="las la-search"></i> </span>
@@ -836,21 +947,209 @@
                               </span>
               </div>
                 </div>
-                </div>
-      
-      <div class="main">
-        <div class="wrapper-latest">
-          <div class="transaction">Latest Transactions</div>
-          <div class="ammount"> search/filter</div>
-        </div>
-        <div class="wrapper-uncomming">
-        <div class="upcomming"> Upcomming Transactions</div>
-        <div class="view"> View All </div>
-        </div>
+          </div>
 
-      </div>
-      
-    </div>
-    </div>
+          <nav class="main-inform">
+            <nav class="latest-transaction">
+    
+              <nav class="wrapper-line">
+            <nav class="transaction"> Latest Transactions </nav> 
+                <nav class="icon-transaction">
+            <span class="material-symbols-outlined">
+              manage_search
+              </span>
+              <span class="material-symbols-outlined" >
+                multiple_stop
+                </span>
+                </nav>
+                </nav>
+                <h5>Mon, Mar 1</h5>
+    
+            <nav class="wrapper-colum">
+                <nav class="colum-1">
+                    <nav class="icon-line1"></nav>
+                    <span class="material-symbols-outlined" id="colum-1">
+                        east
+                        </span>
+                        
+                    
+                </nav>
+                    <nav class="colum-2">
+                      <nav class="line2">Payment Sent to Shakir
+    
+                      </nav>
+                    </nav>
+                <nav class="colum-3">
+                  <nav class="red-num"> $560.00 
+                  </nav></nav>
+                </nav>
+    
+                <nav class="wrapper-colum">
+                  <nav class="colum-1">
+                    <nav class="icon-line1">
+                        <span class="material-symbols-outlined" id="colum-1">
+                            west
+                            </span>
+                      </nav>
+                  </nav>
+                      <nav class="colum-2">
+                        <nav class="line2">Salary from Redwhale
+                        </nav>
+                      </nav>
+                  <nav class="colum-3">
+                    <nav class="grey-num"> $12,200.00
+                    </nav></nav>
+                  </nav>
+    
+    
+                  <nav class="wrapper-colum">
+                    <nav class="colum-1">
+                      <nav class="icon-line1">
+                        <span class="material-symbols-outlined" id="colum-1">
+                          send
+                          </span>
+                        </nav>
+                    </nav>
+                        <nav class="colum-2">
+                          <nav class="line2">Money Sent to Wise.com
+                          </nav>
+                        </nav>
+                    <nav class="colum-3">
+                      <nav class="red-num"> $3,000.00
+                      </nav></nav>
+                    </nav>
+    
+                    <h5>Mon, Mar 1</h5>
+    
+                    <nav class="wrapper-colum">
+                      <nav class="colum-1">
+                        <nav class="icon-line1">
+                          <span class="material-symbols-outlined" id="colum-1">
+                            keyboard_tab
+                            </span>
+                          </nav>
+                      </nav>
+                          <nav class="colum-2">
+                            <nav class="line2">Purchased Macbook Pro
+                            </nav>
+                          </nav>
+                      <nav class="colum-3">
+                        <nav class="red-num"> $5560.00
+                        </nav></nav>
+                      </nav>
+    
+    
+
+                </nav>
+            
+                <nav class="latest-upcomming">
+                  <nav class="wrapper-line">
+                    <nav class="transaction">  Upcoming Transaction </nav> 
+                        <nav class="view"> View All </nav>
+                        </nav>
+    
+                        <h6> Today</h6>
+    
+                        <nav class="wrapper-colum">
+                         
+                          <nav class="colum-1-up">
+                              <span class="material-symbols-outlined" id="icon-water">
+                                water_drop 
+                                </span>
+                          </nav>
+    
+                              <nav class="colum-2">
+                                <nav class="line2">Water Bill
+                                </nav>
+                                <nav class="view">Unsuccessfully</nav>
+                              </nav>
+                          <nav class="colum-3">
+                            <nav class="red-num"> -$280
+                            </nav></nav>
+                          </nav>
+    
+                          <h6> Tomorrow</h6>
+                          <nav class="wrapper-colum">
+                            <nav class="colum-1-up">
+                              <nav class="icon-line2">
+                                <span class="material-symbols-outlined" id="icon-incom">
+                                  auto_schedule
+                                  </span>
+                                  
+                                </nav>
+                            </nav>
+                                <nav class="colum-2">
+                                  <nav class="line2">Income:Salary Oct
+                                  </nav>
+                                  <nav class="view">Successfully</nav>
+                                </nav>
+                            <nav class="colum-3">
+                              <nav class="grey-num"> +$1200
+                              </nav></nav>
+                            </nav>
+    
+                            <nav class="wrapper-colum">
+                              <nav class="colum-1-up">
+                                <nav class="icon-line2">
+                                  <span class="material-symbols-outlined" id="icon-electric">
+                                    power
+                                    </span>
+                                    
+                                  </nav>
+                              </nav>
+                                  <nav class="colum-2">
+                                    <nav class="line2">Electric Bill
+                                    </nav>
+                                    <nav class="view">Successfully</nav>
+                                  </nav>
+                              <nav class="colum-3">
+                                <nav class="red-num"> -$480
+                                </nav></nav>
+                              </nav>
+    
+                              <nav class="wrapper-colum">
+                                <nav class="colum-1-up">
+                                  <nav class="icon-line2">
+                                    <span class="material-symbols-outlined" id="icon-transfer">
+                                      receipt
+                                      </span>
+                                      
+                                    </nav>
+                                </nav>
+                                    <nav class="colum-2">
+                                      <nav class="line2">Income: jane transfers
+                                      </nav>
+                                      <nav class="view">Successfully</nav>
+                                    </nav>
+                                <nav class="colum-3">
+                                  <nav class="grey-num"> +$500
+                                  </nav></nav>
+                                </nav>
+    
+                                <nav class="wrapper-colum">
+                                  <nav class="colum-1-up">
+                                    <nav class="icon-line2">
+                                      <span class="material-symbols-outlined" id="icon-transfer">
+                                        receipt
+                                        </span>
+                                        
+                                      </nav>
+                                  </nav>
+                                      <nav class="colum-2">
+                                        <nav class="line2">Income: jane transfers
+                                        </nav>
+                                        <nav class="view">Successfully</nav>
+                                      </nav>
+                                  <nav class="colum-3">
+                                    <nav class="grey-num"> +$500
+                                    </nav></nav>
+                                  </nav>
+  
+                </nav>       
+        
+        
+      </nav>
+    </main> 
+
   </body>
 </html>
