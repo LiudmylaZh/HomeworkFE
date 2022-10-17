@@ -4,8 +4,8 @@
 
 [Authorization form](https://liudmylazh.github.io/HomeworkFE/authorization.html)
 
-[Credit cards] (https://liudmylazh.github.io/HomeworkFE/credit-card.html)
+[Credit cards](https://liudmylazh.github.io/HomeworkFE/credit-card.html)
 
-[Block position] (https://liudmylazh.github.io/HomeworkFE/homework2.html)
+[Block position](https://liudmylazh.github.io/HomeworkFE/homework2.html)
 
-[Banner Youami] (https://liudmylazh.github.io/HomeworkFE/homework3.html)
+[Banner Youami](https://liudmylazh.github.io/HomeworkFE/homework3.html)
