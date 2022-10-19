@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+   
+
+   .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        grid-template-rows: repeat(3, 150px);
+        gap: 10px;
+        grid-template-areas: 
+        "aside header1 header1 rightside"
+        "aside center-top1 center-top2 right-banner"
+        "aside enter-button1 enter-button2 right-banner";
+        background: rgb(44, 46, 86);
+        height: 500px;
+        padding: 50px;
+        
+    }
+    .aside {
+        grid-area: aside;
+        background: rgb(111, 190, 79);
+    }
+    .header1 {
+        grid-area: header1;
+        background: rgb(111, 190, 79);
+    }
+
+    
+    .rightside {
+        grid-area: rightside;
+        background: rgb(218, 49, 50);
+    }
+    .center-top1 {
+        grid-area: center-top1;
+        background: rgb(246, 174, 45);
+    }
+    .center-top2 {
+        grid-area: center-top2;
+        background: rgb(218, 49, 50);
+    }
+    .right-banner {
+        grid-area: right-banner;
+        background: rgb(111, 190, 79);
+    }
+
+    .enter-button1 {
+        grid-area: enter-button1;
+        background: rgb(218, 49, 50);
+
+    }
+    .enter-button2 {
+        grid-area: enter-button2;
+        background: rgb(246, 174, 45);
+    }
+   
+
+
+  
+
+</style>
+
+<body>
+    <div class="wrapper">
+    <div class="aside"></div>
+      <div class="header1"></div>
+      <div class="rightside"></div>
+      <div class="center-top1"></div>
+      <div class="center-top2"></div>
+      <div class="right-banner"></div>
+      <div class="enter-button1"></div>
+      <div class="enter-button2"></div>
+      
+      </div>
+</body>
+</html>
