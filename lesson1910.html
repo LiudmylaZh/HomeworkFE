@@ -1,73 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Individual work</title>
-</head>
-<style>
+  </head>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      
+    }
 
-  body,
-  html {
-    height: 100%;
-  }
-   
-
-   .wrapper {
-    display: grid;
-        grid-template-columns: repeat(3, 100%);
-        grid-template-rows: repeat(4, 100%);
-        gap: 10px;
-        grid-template-areas: 
+    .wrapper {
+      display: grid;
+      height: 100%; 
+      grid-template-columns: repeat(4, 100%);
+      grid-template-rows: repeat(4, 100%);
+      gap: 10px;
+      grid-template-areas:
         "aside header1 header1 rightside"
         "aside center-top1 center-top2 right-banner"
         "aside enter-button1 enter-button2 right-banner"
-        "enter-button1 enter-button1 right-banner";
-        padding: 50px;
-        }
-   
-        
-     .aside {
-            grid-area: aside;
-            background: green;
-        }
-        .header1 {
-            grid-area: header1;
-            background: green;
-        }
-        .rightside {
-            grid-area: rightside;
-            background: green;
-        }
-        .center-top1 {
-            grid-area: center-top1;
-            background: green;
-            
-        }
-        .center-top2 {
-           grid-area: center-top1;
-           background: green;
-        }
-        .right-banner {
-            grid-area: right-banner;
-            background: green;
-        }
-        .enter-button1 {
-            grid-area: enter-button1;
-            background: green;
-        }
-        .enter-button2 {
-            grid-area: enter-button2;
-            background: green;
-        }
+        "enter-button1 enter-button1 enter-button1 right-banner";
+      padding: 50px;
+    }
 
-   
-</style>
+    .aside {
+      grid-area: aside;
+      background: green;
+    }
+    .header1 {
+      grid-area: header1;
+      background: green;
+    }
+    .rightside {
+      grid-area: rightside;
+      background: green;
+    }
+    .center-top1 {
+      grid-area: center-top1;
+      background: green;
+    }
+    .center-top2 {
+      grid-area: center-top1;
+      background: green;
+    }
+    .right-banner {
+      grid-area: right-banner;
+      background: green;
+    }
+    .enter-button1 {
+      grid-area: enter-button1;
+      background: green;
+    }
+    .enter-button2 {
+      grid-area: enter-button2;
+      background: green;
+    }
+  </style>
 
-<body>
+  <body>
     <div class="wrapper">
-    <div class="aside">1</div>
+      <div class="aside">1</div>
       <div class="header1">2</div>
       <div class="rightside">3</div>
       <div class="center-top1">4</div>
@@ -75,9 +72,6 @@
       <div class="right-banner">6</div>
       <div class="enter-button1">7</div>
       <div class="enter-button2">8</div>
-      
-      
-      
-      </div>
-</body>
+    </div>
+  </body>
 </html>
