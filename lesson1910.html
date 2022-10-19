@@ -8,22 +8,23 @@
   </head>
   <style>
     body,
-    html {
+    html,
+    .wrapper {
       height: 100%;
       margin: 0;
     }
 
     .wrapper {
       display: grid;
-      height: 100%;
-      grid-template-columns: repeat(4, 100%);
-      grid-template-rows: repeat(4, 100%);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
       gap: 10px;
       grid-template-areas:
         "aside header1 header1 rightside"
-        "aside center-top1 center-top2 right-banner"
-        "aside enter-button1 enter-button2 right-banner"
-        "enter-button1 enter-button1 enter-button1 right-banner";
+        "aside  center-top1 center-top2 right-banner"
+        "aside  center-top1 center-top2 right-banner"
+        "aside enter-button1 enter-button1 right-banner"
+        "aside enter-button2 enter-button2 right-banner";
     }
 
     .aside {
