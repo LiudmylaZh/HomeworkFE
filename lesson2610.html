@@ -14,12 +14,17 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
-    html,
-    body {
+    *{
         margin: 0;
         padding: 0;
-        height: 100%;
+        box-sizing: border-box;
+        ;
 
+    }
+    html,
+    body,
+    .wrapper {
+        height: 100%;
     }
     :root {
       --sidebar-width: 50vw;
@@ -57,7 +62,7 @@
         grid-area: additional--information;
         background: blue;
     }
-    .sidebar {
+   /** .sidebar {
       background: rgb(87, 135, 190);
       height: 100%;
       width: 50vh;
@@ -67,7 +72,7 @@
       transform: translateX(calc(var(--sidebar-width) * -1));
       transition: all 0.5s ease-out;
       z-index: 1;
-    } 
+    } **/
 
     .wrapper-header {
         display: flex;
@@ -112,12 +117,24 @@
     .wrapper-menu {
         display: flex;
     }
+    .image-first {
+        display: none;
+    }
+    
+    
     @media (max-width: 768px) {
         .menu {
             display: none;
         }
         .sidebar {
             background: greenyellow;
+        }
+        .image {
+            display: none;
+        }
+        .information
+        {
+            width: 95%;
         }
     }
 
@@ -149,36 +166,43 @@
             </nav>
             </div>
         </div>
-      </div>
+     
       <div class="content">
         <div class="wrapper-content">
         <div class="information">
             <h1> Refueling a car at your addres</h1>
             <h4>Delivery service for all typs of fuel for your car</h4>
+            <div class="image-first">
+                <img src="https://via.placeholder.com/150" alt="">
+            </div>
             <div class="wrapper-buttom">
             <button class="button" onclick="toggleMenu()">Apple store</button>
             <button class="button" onclick="toggleMenu()">Google play</button>
             </div>
-            <div class="wrapper-buttom">
+            <div class="wrapper-network">
                 <button class="button" onclick="toggleMenu()">Instagram</button>
                 <button class="button" onclick="toggleMenu()">Facebook</button>
                 <button class="button" onclick="toggleMenu()">Twitter</button>
 
                 </div>
         </div>
+        
+        <div class="image">
+            <img src="https://via.placeholder.com/150" alt="">
         </div>
-        <div class="image">3</div>
         </div>
       </div>
       <div class="additional--information">
         <div class="wrapper-additional">
-        <div class="block">1</div>
+        <div class="block">
+
+        </div>
         <div class="block">1</div>
         <div class="block">1</div>
     </div>
     </div>
 
-      </div>
+      
       
      
     </main>
