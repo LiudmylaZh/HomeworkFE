@@ -23,6 +23,10 @@
     :root {
       --sidebar-width: 50vw;
       
+      
+    }
+    a :hover {
+        text-decoration: underline;
     }
     .wrapper {
       display: grid;
@@ -71,10 +75,14 @@
         padding: 20px;
 
     }
-    .logo {
+    .menu {
+        border: 2px solid red;
+    }
+    .logo,
+    .block {
         border: 2px solid red;
         display: flex;
-        justify-items: center;
+        justify-content: center;
         
     }
     .wrapper-content {
@@ -86,11 +94,30 @@
     .information {
         width: 50%;
         border: 2px solid red;
+        margin: 5px;
     }
     .image
     {
         width: 50%;
         border: 2px solid red;
+        margin: 5px;
+    }
+    .wrapper-additional {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid red;
+        padding: 20px;
+    }
+    .wrapper-menu {
+        display: flex;
+    }
+    @media (max-width: 768px) {
+        .menu {
+            display: none;
+        }
+        .sidebar {
+            background: greenyellow;
+        }
     }
 
 
@@ -107,15 +134,18 @@
                     </span>
                     <div class="name">bensinol</div>
                     </div>
-            <div class="menu">
+                    <nav class="wrapper-menu">
+            <nav class="menu">
                 <a href="https://www.google.de/" id="text-menu"> Home</a>
                 <a href="https://www.google.de/" id="text-menu"> Feature</a>
                 <a href="https://www.google.de/" id="text-menu"> Screen</a>
                 <a href="https://www.google.de/" id="text-menu"> Pricing</a>
                 <a href="https://www.google.de/" id="text-menu"> Team</a>
                 <a href="https://www.google.de/" id="text-menu"> Question</a>
+                </nav>
                 <button class="button" onclick="toggleMenu()">Get Started</button>
-            </div>
+            
+            </nav>
             </div>
         </div>
       </div>
@@ -125,7 +155,15 @@
         <div class="image">3</div>
         </div>
       </div>
-      <footer class="additional--information">3</footer>
+      <div class="additional--information">
+        <div class="wrapper-additional">
+        <div class="block">1</div>
+        <div class="block">1</div>
+        <div class="block">1</div>
+    </div>
+    </div>
+
+      </div>
       
      
     </main>
