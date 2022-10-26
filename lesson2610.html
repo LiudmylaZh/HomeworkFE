@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-    <style>
-        .wrapper {
-        display: grid;
-      grid-template-columns: repeat(3, 1fr);
+  </head>
+  <style>
+    :root {
+      --sidebar-width: 50vw;
+    }
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(3, 1fr);
       gap: 10px;
-        }
-    .header,
-    .content,
-    .additional--information,
-    .logo,
-    .menu-desktop,
-    .image,
-    .paymentTyps,
-    .buttom,
-    .additional--information2 {
-        border: green;
-    }
-
-
-.sidebar {
     
+    }
+    .header {
+        grid-area: header;
+        background: blue;
+    }
+    .content {
+        grid-area: content;
+        background: blue;
+    }
+    .logo {
+        grid-area: logo;
+        background: blue;
+
+    }
+    .menu-desktop {
+        grid-area: menu-desktop;
+        background: blue;
+    }
+    .additional--information {
+        grid-area: additional--information;
+        background: blue;
+    }
+    .sidebar {
       background: rgb(87, 135, 190);
       height: 100%;
-      width: var(--sidebar-width);
+      width: 50vh;
       position: fixed;
       top: 0;
       left: 0;
       transform: translateX(calc(var(--sidebar-width) * -1));
       transition: all 0.5s ease-out;
       z-index: 1;
-    
-}
-
-
-
-
-    </style>
-<body>
-    <aside class="sidebar"> 
-
-    </aside>
+    } **/
+  </style>
+  <body>
+    <aside class="sidebar"></aside>
     <main class="wrapper">
-        <div class="header"> 1 </div>
-        <div class="content">2</div>
-        <footer class="additional--information">3</footer>
-        <div class="logo">4</div>
-        <div class="menu-desktop">5</div>
-        <div class="image">6</div>
-        <div class="paymentTyps">7</div>
-        <div class="buttom">8</div>
-        <footer class="additional--information2">9</footer>
+      <div class="header">1</div>
+      <div class="content">2</div>
+      <footer class="additional--information">3</footer>
+      
+     
     </main>
-</body>
+  </body>
 </html>
