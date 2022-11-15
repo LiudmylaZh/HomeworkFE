@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Shop</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,1000;1,200;1,800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    * {
+      font-family: "Nunito", sans-serif;
+    }
+    
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+      font-weight: bolder;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    #speed {
+      font-size: 45px;
+    }
+
+    .wrapper-location {
+      display: flex;
+      justify-content: space-between;
+    }
+    .items {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 5px;
+      padding-right: 5px;
+      
+    }
+    a:hover,
+    a:visited,
+    a:link,
+    a:active {
+      text-decoration: none;
+      color: rgb(55, 54, 58);
+    }
+    a:hover {
+      text-decoration: underline;
+      font-size: bolder;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+    .wrapper-images {
+      width: 65%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    .wrapper-add {
+      width: 25%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid rgb(240, 239, 243);;
+    }
+
+    #main-img {
+      width: 100%;
+    }
+
+    .add-img {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      
+    }
+    .sale-price {
+      display: flex;
+      justify-content: space-between;
+      font-size: large;
+      padding: 5px;
+    }
+    .discount {
+      background: rgb(28, 96, 206);
+      color: white;
+      padding: 5px 12px 5px 12px;
+    }
+
+    .discount-prise {
+      color: rgb(28, 96, 206);
+      font-weight: 500;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .name-add {
+        text-align: center;
+    }
+    .add-valide {
+        text-align: center;
+        background: rgb(240, 239, 243);
+        font-size: large;
+    }
+    .date {
+        color: rgb(28, 96, 206);
+        font-weight: bold;
+    }
+
+   
+       
+    
+
+  
+  </style>
+  <body>
+    <nav class="menu">
+      <div class="shop">Магазин</div>
+      <div class="sels">Акції</div>
+      <div class="delivery">Доставка та оплата</div>
+      <div class="wrapper-logo">
+        <span class="material-symbols-outlined" id="speed"> speed </span>
+        <div class="drive">DRIVE MOTO</div>
+      </div>
+      <div class="wrapper-location">
+        <span class="material-symbols-outlined"> pin_drop </span>
+        <div class="address">Київ, вул. Науки 25</div>
+      </div>
+      <div class="wrapper-cabinet">
+        <span class="material-symbols-outlined"> favorite </span>
+        <span class="material-symbols-outlined"> person </span>
+        <span class="material-symbols-outlined"> shopping_cart </span>
+      </div>
+    </nav>
+
+    <nav class="items">
+      <p class="quadbike"><a href="https://www.google.de/">Квадроцикли</a></p>
+
+      <p class="boats"><a href="https://www.google.de/">Катера</a></p>
+      <p class="jetskis"><a href="https://www.google.de/">Гідроцикли</a></p>
+      <p class="skif"><a href="https://www.google.de/">Лодки</a></p>
+      <p class="vehicle"><a href="https://www.google.de/">Всюдоходи</a></p>
+      <p class="snowmobile"><a href="https://www.google.de/">Снігоходи</a></p>
+      <p class="engines"><a href="https://www.google.de/">Двигуни</a></p>
+      <p class="duplicates"><a href="https://www.google.de/">Запчастини</a></p>
+    </nav>
+
+    <main class="content">
+      <div class="wrapper-images">
+        <img
+          src="https://images.unsplash.com/photo-1548978023-78e9b6b082fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1858&q=80"
+          alt=""
+          id="main-img"
+        />
+      </div>
+      <div class="wrapper-add">
+        <div class="sale-price">
+          <div class="discount">АКЦІЯ</div>
+          <div class="discount-prise">13 999 €</div>
+        </div>
+        <div class="add-img">
+          <img src="engin.png" alt="" />
+        </div>
+        <div class="name-add">
+          <h5>Мотор для лодки Suzuki DF9.9BRS</h5>
+        </div>
+        <div class="add-valide">
+        <div class="date-add">Акція дія до</div>
+         <div class="date">31.12.2022</div>
+         
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
